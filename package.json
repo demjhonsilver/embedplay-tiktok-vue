@@ -1,7 +1,7 @@
 {
   "name": "embedplay-tiktok-vue",
-  "version": "1.0.0-alpha.13",
-  "description": "This Vue component integrates a TikTok player within an iframe, offering customization options through query parameters. ",
+  "version": "1.0.0",
+  "description": "This package provides a flexible and easy way to integrate TikTok videos into your Vue application.",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
