@@ -56,6 +56,12 @@ Major Changes:
 
  - The component supports a flexible border radius, allowing you to easily adjust the corner curvature of the iframe to fit your design needs.
 
+
+Patch Changes:
+
+ v1.0.1
+ - Removed "webpack-env" from the "types" array in compilerOptions of tsconfig.json
+
 ___________
 
 ## Installation

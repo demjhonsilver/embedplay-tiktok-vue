@@ -1,6 +1,6 @@
 {
   "name": "embedplay-tiktok-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package provides a flexible and easy way to integrate TikTok videos into your Vue application.",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -21,7 +21,7 @@
     "player",
     "iframe",
     "javascript",
-    "typecript",
+    "typescript",
     "vue"
   ],
   "author": "Demjhon Silver",

@@ -14,7 +14,7 @@
     "allowJs": true,
     "jsx": "preserve",
     "lib": ["dom", "esnext"],
-    "types": ["webpack-env"],
+    "types": [], // removed "webpack-env" from the "types" array in compilerOptions of tsconfig.json to eliminate unnecessary type definitions for a Vite project.
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
