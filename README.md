@@ -59,6 +59,9 @@ Major Changes:
 
 Patch Changes:
 
+ v1.0.2
+ - To emphasize the documentation for SFCs (single-file components), the Composition API, and the Options API.
+
  v1.0.1
  - Removed "webpack-env" from the "types" array in compilerOptions of tsconfig.json
 
@@ -71,18 +74,25 @@ To install the Embedplay TikTok Vue, you can use the following npm command:
 ```bash
 npm install embedplay-tiktok-vue
 ```
-
-
---------
-
-
-
-
-------------
 ------------
 ## Paradigm
 
+
+Using Single-File Components (SFCs) - Composition API
+---------
 ```js
+<script setup>
+import ExampleComponent  from 'example-component';
+</script>
+```
+
+Example 1
+
+```js
+<script setup>
+import EmbedplayTikTokVue  from 'embedplay-tiktok-vue';
+</script>
+
 <template>
   <div>
     <EmbedplayTikTokVue 
@@ -104,27 +114,75 @@ npm install embedplay-tiktok-vue
     />
   </div>
 </template>
+```
 
-<script setup>
+
+
+
+
+----------------
+
+
+Using Components (Options API)
+---------
+```js
+<script>
+import ExampleComponent  from 'example-component';
+export default {
+  components: {
+    ExampleComponent
+  }
+};
+</script>
+```
+
+Example 2
+
+
+```js
+<script>
 import EmbedplayTikTokVue  from 'embedplay-tiktok-vue';
+export default {
+  components: {
+    EmbedplayTikTokVue
+  }
+};
 </script>
 
+<template>
+  <div>
+    <EmbedplayTikTokVue 
+      postId="6718335390845095173" 
+      :autoplay="false" 
+      :controls="true" 
+      :progressBar="true" 
+      :playButton="true"
+      :volumeControl="true" 
+      :fullscreenButton="true" 
+      :timestamp="true"
+      :loop="false"
+      :musicInfo="true"
+      :description="false"
+      :rel="true"
+      :nativeContextMenu="false"
+      :width="640" 
+      :height="360"
+    />
+  </div>
+</template>
 ```
-For global usage (main.js)
+---------
+You can also use a global declaration.(main.js)
+---------
 
 ```js
 import { createApp } from 'vue';
-import './style.css'; 
 import App from './App.vue';
-import router from './router';
 import EmbedplayTikTokVue from 'embedplay-tiktok-vue'; // Import global
-
 
 createApp(App)
   .component('EmbedplayTikTokVue', EmbedplayTikTokVue) 
-  .use(router) 
   .mount('#app');
-
 ```
 
 If you choose global, you can use the code below:
